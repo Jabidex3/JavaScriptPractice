@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h1 style="text-align: center;"> JavaScript Practice</h1>
+    <!-- Inline JS : JavaScript can change HTML content. -->
+    <p id="prac">Change HTML element using JS</p>
+    <button type="button" onclick='document.getElementById("prac").innerHTML = "Hello JS!"'>Change Content</button>
+    <br>
+    <hr>
+    <!-- JavaScript can change HTML attribute values. -->
+    
+
+    <img id="myImage" src="images/red circle.png" style="width:100px">
+    <br>
+    <button onclick="document.getElementById('myImage').src='images/red circle.png'">Change to red</button>    
+    <button onclick="document.getElementById('myImage').src='images/blue circle.png'">change to blue</button>
+    <br>
+    <hr>
+
+    <!--JavaScript can change the style of an HTML element.-->
+    <button onclick="document.body.style.backgroundColor = 'red'">Change bg color</button>
+    <button type="button" onclick="document.getElementById('prac').style.fontSize='35px'">Click Me!</button>
+
+    <!-- can hide elements by changing style attribute: display = "none" and show elements by changing display to block
+            document.getElementById("demo").style.display = "none";
+    -->
+
+    <!--
+        -JavaScript code is inserted between <script> and </script> tags
+        -A JavaScript function is a block of JavaScript code, that can be executed when "called" for. (i.e. user clicks a button)
+        -Can place script tags in both/either head or body
+            -better to put it at the end of the body because it improves the display speed, because script interpretation slows down the display.
+         -External JavaScript file is also a good idea
+            It separates HTML and code
+            It makes HTML and JavaScript easier to read and maintain
+            Cached JavaScript files can speed up page loads
+    -->
+    <br>
+    <hr>
+    <button type="button" onclick="myFunction()">External JS</button>
+    <br>
+    <hr>
+    <!-- -Access an HTML element using JS via document.getelementbyid(id)
+         -Can write to screen with document.write()
+            -Using document.write() after an HTML page is loaded, will delete all existing HTML
+                ie. click button event
+            -used for testing!!
+        -windows.alert() used for alert pop up msg
+            -alert() also works
+        -console.log()
+            -used for debugging
+        ***JavaScript does not have any print object or print methods.
+    -->
+    <button type="button" onclick="window.alert('Test')">Alert Test</button>
+    <script></script> <!--can have multiple script tags-->
+
+    <script src="JS/externalScript.js"></script>
+</body>
+</html>
