@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1 style="text-align: center;"> JavaScript Practice</h1>
-    <!-- Inline JS : JavaScript can change HTML content. -->
+    <!-- Inline JS; JavaScript can change HTML content. -->
     <p id="prac">Change HTML element using JS</p>
     <button type="button" onclick='document.getElementById("prac").innerHTML = "Hello JS!"'>Change Content</button>
     <br>
@@ -57,8 +57,45 @@
         ***JavaScript does not have any print object or print methods.
     -->
     <button type="button" onclick="window.alert('Test')">Alert Test</button>
-    <script></script> <!--can have multiple script tags-->
 
+
+    <!--
+        -JavaScript statements are composed of: Values, Operators, Expressions, Keywords, and Comments
+        -Semicolons separate JavaScript statements
+
+            var a, b, c;     // Declare 3 variables
+            a = 5;           // Assign the value 5 to a
+            b = 6;           // Assign the value 6 to b
+            c = a + b;       // Assign the sum of a and b to c
+
+            AND
+
+            a = 5; b = 6; c = a + b;
+
+            ARE VALID
+        -JS ignores whitespace
+        -Create function using 'function' keyword
+        -var declares a variable
+        -All JavaScript identifiers are case sensitive
+    -->
+
+    <p id ="test"></p>
+    <br>
+    <hr>
+    <p id="operatorDiff"></p>
+    
+    <script>
+        var x = 45+8;
+        document.getElementById('test').innerHTML=x;
+
+    </script> <!--can have multiple script tags-->
+
+    <!--
+        -Declared JS var have a default undefined value
+            ie. var temp;
+                if you print out temp, you would get 'undefined'
+
+    -->
     <script src="JS/externalScript.js"></script>
 </body>
 </html>
